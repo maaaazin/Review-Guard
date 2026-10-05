@@ -1,0 +1,83 @@
+{
+  "training_date_utc": "2026-10-05T16:49:36.254579+00:00",
+  "dataset_size": 1596,
+  "model_name": "TF-IDF + Logistic Regression",
+  "random_state": 42,
+  "schema": {
+    "source_file": "/Users/maaaazin/Developer/NLPCA3/data/deceptive-opinion.csv",
+    "text_column": "text",
+    "label_column": "deceptive",
+    "polarity_column": "polarity",
+    "hotel_column": "hotel"
+  },
+  "tfidf_parameters": {
+    "analyzer": "word",
+    "binary": false,
+    "decode_error": "strict",
+    "dtype": "<class 'numpy.float64'>",
+    "encoding": "utf-8",
+    "input": "content",
+    "lowercase": true,
+    "max_df": 0.95,
+    "max_features": null,
+    "min_df": 2,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "norm": "l2",
+    "preprocessor": null,
+    "smooth_idf": true,
+    "stop_words": null,
+    "strip_accents": "unicode",
+    "sublinear_tf": true,
+    "token_pattern": "(?u)\\b\\w\\w+\\b",
+    "tokenizer": null,
+    "use_idf": true,
+    "vocabulary": null
+  },
+  "test_metrics": {
+    "model": "Logistic Regression",
+    "accuracy": 0.89375,
+    "precision": 0.8795180722891566,
+    "recall": 0.9125,
+    "f1": 0.8957055214723927
+  },
+  "cross_validation": {
+    "cv_accuracy_mean": 0.8839920343137255,
+    "cv_accuracy_std": 0.016488542503605767,
+    "cv_f1_mean": 0.8847368854221587,
+    "cv_f1_std": 0.017373720719205416
+  },
+  "hotel_holdout_experiment": {
+    "accuracy": 0.8526645768025078,
+    "precision": 0.8741721854304636,
+    "recall": 0.825,
+    "f1": 0.8488745980707395
+  },
+  "linguistic_summary": {
+    "truthful": {
+      "character_count": 818.9070351758794,
+      "word_count": 153.01507537688443,
+      "sentence_count": 10.571608040201005,
+      "avg_sentence_length": 15.734053048861735,
+      "exclamation_count": 0.9899497487437185,
+      "question_count": 0.1922110552763819,
+      "first_person_count": 8.158291457286433,
+      "uppercase_ratio": 0.0,
+      "sentiment_compound": NaN
+    },
+    "deceptive": {
+      "character_count": 790.5975,
+      "word_count": 148.60375,
+      "sentence_count": 9.1775,
+      "avg_sentence_length": 16.451564847741754,
+      "exclamation_count": 0.9775,
+      "question_count": 0.0775,
+      "first_person_count": 10.46,
+      "uppercase_ratio": 0.0,
+      "sentiment_compound": NaN
+    }
+  },
+  "note": "Feature associations describe this trained corpus, not proof of deception."
+}

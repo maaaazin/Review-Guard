@@ -5,12 +5,3 @@ venv/
 .env
 .ipynb_checkpoints/
 .DS_Store
-data/*
-!data/README.md
-!data/.gitkeep
-models/*
-!models/.gitkeep
-reports/figures/*
-!reports/figures/.gitkeep
-reports/results/*
-!reports/results/.gitkeep

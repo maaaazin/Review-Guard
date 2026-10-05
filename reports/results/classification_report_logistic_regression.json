@@ -1,0 +1,27 @@
+{
+  "Truthful": {
+    "precision": 0.9090909090909091,
+    "recall": 0.875,
+    "f1-score": 0.89171974522293,
+    "support": 160.0
+  },
+  "Deceptive": {
+    "precision": 0.8795180722891566,
+    "recall": 0.9125,
+    "f1-score": 0.8957055214723927,
+    "support": 160.0
+  },
+  "accuracy": 0.89375,
+  "macro avg": {
+    "precision": 0.8943044906900328,
+    "recall": 0.89375,
+    "f1-score": 0.8937126333476613,
+    "support": 320.0
+  },
+  "weighted avg": {
+    "precision": 0.8943044906900328,
+    "recall": 0.89375,
+    "f1-score": 0.8937126333476613,
+    "support": 320.0
+  }
+}
